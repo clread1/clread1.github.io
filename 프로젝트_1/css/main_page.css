@@ -1,0 +1,209 @@
+#wrap{
+
+}
+.header{
+    width: 100%;
+    height: 60px;
+}
+.header_container{
+    
+}
+.top_header{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* header_L */
+.header_L{
+    display: flex;
+}
+.logo_list{
+    height: 30px;
+    line-height: 30px;
+    display: flex;
+
+    font-size: 17px;
+    font-weight: 900;
+    color: rgb(133, 136, 148);
+
+}
+.logo_list a{
+    height: 100%;
+    display: block;
+}
+a > span{
+    padding: 5px;
+}
+#logo_naver{
+    background-image: url(https://ssl.pstatic.net/static/nng/resource/img/sp/pcw/sp_mw4.png);
+    background-size: 661px 396px;
+    background-position: -200px -265px;
+    width: 59px;
+}
+#logo_game{
+    background-image: url(https://ssl.pstatic.net/static/nng/resource/p/static/media/sp_mw_22_1.7897d755.png);
+    background-size: 355px 330px;
+    background-position: -256px 0;
+    width: 56px;
+    margin: 0 7px 0 10px;
+}
+#logo_chzzk{
+    background-image: url(https://ssl.pstatic.net/static/nng/resource/p/static/media/sp_mw_23_1.00948ddf.png);
+    background-size: 342px 341px;
+    background-repeat: no-repeat;
+    background-position: -66px -173px;
+    width: 65px;
+    height: 28px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 2px;
+}
+.logo_list:nth-child(n+3)::before{
+    content: "";
+    width: 1px;
+    height: 14px;
+    border-radius: 1px;
+    margin: 8px 1px;
+    background-color: gray;
+}
+/* header_R */
+.header_R{
+    display: flex;
+    gap: 10px;
+}
+.header_search_box{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    position: relative;
+}
+.header_search_bar{
+    width: 100%;
+    height: 100%;    
+    padding: 12px 60px 12px 20px;
+
+    border: none;
+    outline: none;
+    background-color: rgb(233 235 241);;
+    box-sizing: border-box;
+}
+.btn_reset{
+    width: 30px;
+    height: 30px;
+    background: url(../img/btn_reset.png) no-repeat center / contain;
+    border: none;
+
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    transform: translateY(-50%);
+
+    cursor: pointer;
+}
+.btn_submit{
+    width: 30px;
+    height: 30px;
+    background: url(../img/btn_search.png) no-repeat center / contain;
+    border: none;
+
+    position: absolute;
+    top: 50%;
+    right: 4px;
+    transform: translateY(-50%);
+
+    cursor: pointer;
+}
+.ticket{
+    width: 40px;
+    height: 40px;
+    background: url(../img/ticket.png) no-repeat center;
+    cursor: pointer;
+}
+.notice{
+    width: 40px;
+    height: 40px;
+    background: url(../img/notice.png) no-repeat center / contain;
+    cursor: pointer;
+}
+.profile{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    margin: 3px;
+    background: url(../img/profile.png) no-repeat center / contain;    cursor: pointer;
+}
+/* main_menu */
+.menu_box{
+    width: 100%;
+    height: 250px;
+    background-color: rgb(129 113 133);
+    position: relative;
+}
+.menu_box::before{
+    content: "";
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, .03), rgba(0, 0, 0, .3)), linear-gradient(180deg, transparent 50%, rgba(0, 0, 0, .3))
+}
+.main_banner{
+    width: 100%;
+    height: 100%;
+    background: url(../img/main_banner.jpg) no-repeat center / cover;
+
+    position: relative;
+}
+.gradient{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+}
+.gradient_left{
+    left: 0;
+    background-image: linear-gradient(to left, transparent, rgb(130, 114, 134));
+}
+.gradient_right{
+    right: 0;
+    background-image: linear-gradient(to right, transparent, rgb(130, 114, 134));
+}
+.main_title_box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+.icon_box{
+    width: 86px;
+    height: 86px;
+    border-radius: 16px;
+    margin-right: 24px;
+    background: url(../img/icon.png) no-repeat center / contain;
+}
+.title_box{
+    width: 100%;
+    color: white;
+}
+.main_title{
+    width: 100%;
+    font-size: 30px;
+    font-weight: 900;
+
+}
+.sub_title{
+    width: 100%;
+}
+.main_menu{
+    
+}
