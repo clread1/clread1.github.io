@@ -1,0 +1,66 @@
+.header{
+    padding-bottom: 48px;
+    box-sizing: border-box;
+}
+.header_inner{
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0 40px;
+}
+.header_inner > a{
+    display: inline-block;
+    margin-top: 108px;
+    vertical-align: top;
+    background-image: url(https://ssl.pstatic.net/static/nid/login/m_sp_00_common_978240a6.png);
+    background-size: 244px 107px;
+    background-position: 0 -51px;
+    background-repeat: no-repeat;
+    width: 155px;
+    height: 30px;
+}
+.lang{
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+.sel{
+    position: relative;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    width: 100%;
+    min-width: 95px;
+    height: 30px;
+    padding: 4px 10px 6px 8px;
+    padding: 7px 8px 6px 7px \9;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    cursor: pointer;
+    z-index: 1;
+    outline: none;
+}
+/* footer */
+.footer{
+    margin: 0 40px;
+}
+.footer_inner{
+    position: relative;
+    text-align: center;
+}
+.footer_inner > ul{
+    display: flex;
+}
+.footer_inner li{
+    position: relative;
+}
+.footer_inner li:nth-of-type(n+2)::before{
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 1px;
+    height: 11px;
+    background-color: #dadada;
+}
