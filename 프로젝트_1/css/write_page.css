@@ -1,0 +1,206 @@
+.login_btn{
+    display: none;
+}
+.profile{
+    display: block;
+}
+
+.write_article{
+    float: left;
+    width: 1066px;
+    margin-left: 24px;
+    padding: 22px 0 19px;
+    box-shadow: 0 2px 30px 0 rgba(0, 0, 0, .06);
+    color: #222;
+}
+.write_article_header{
+    display: flex;
+    gap: 20px;
+    padding: 0 30px;
+}
+.write_article_title{
+    font-size: 19px;
+    line-height: 32px;
+    color: #222;
+}
+.write_article_select{
+    height: 32px;
+    line-height: 17px;
+    align-items: center;
+    padding: 7px 10px 6px;
+    border: 1px solid #ebebeb;
+    box-sizing: border-box;
+    color: #b9b9b9;
+}
+.write_article_select::after{
+    content: "";
+    display: inline-block;
+    background-image: url(https://ssl.pstatic.net/static/nng/resource/p/static/media/sp_mw5.41aa320d.png);
+    background-size: 638px 617px;
+    background-repeat: no-repeat;
+    background-position: -521px -277px;
+    width: 11px;
+    height: 11px;
+    margin-left: 10px;
+}
+.write_article_content{
+    margin: 29px 30px 17px;
+}
+.write_content_title{
+    width: 100%;
+    font-size: 19px;
+    box-sizing: border-box;
+    border: none;
+}
+.toolbar_box{
+    height: 105px;
+    margin: 5px;
+    border: 1px solid #ededed;
+    box-sizing: border-box;
+}
+/* 
+.toolbar_box > ul{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.toolbar_attach{
+    width: 100%;
+    padding: 7px 23px 12px 7px;
+}
+.toolbar_attach > li{
+    padding-left: 16px;
+}
+.toolbar_text{
+    width: 100%;
+    padding-left: 26px;
+}
+*/
+.write_article_detail_box{
+    box-sizing: border-box;
+}
+.write_article_detail{
+    width: calc(100% - 40px);
+    height: 450px;
+    margin: 50px 0px 50px 20px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 18px;
+}
+.write_article_tag_box{
+    border: 1px solid #ededed;
+    border-radius: 12px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-content: center;
+    margin: 0 30px;
+    padding: 10px 0 16px;
+    border-top: 1px solid #f5f5f5;
+}
+.write_article_tag_box::before{
+    content: "";
+    display: inline-block;
+    background-image: url(https://ssl.pstatic.net/static/nng/resource/p/static/media/sp_mw5.41aa320d.png);
+    background-size: 638px 617px;
+    background-repeat: no-repeat;
+    background-position: -306px -565px;
+    width: 26px;
+    height: 26px;
+    margin: 11px 0px 11px 6px;
+}
+.write_article_tag{
+    display: flex;
+    align-items: center;
+    margin: 5px 0 0 5px;
+    padding: 6px 0px;
+    font-size: 14px;
+    min-width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #ededed;
+    border-radius: 12px;
+    outline: none;
+    background-color: white;
+    color: #999;
+    text-align: center;
+    cursor: pointer;
+}
+.write_article_tag::before{
+    content: "";
+    display: inline-block;
+    background-image: url(https://ssl.pstatic.net/static/nng/resource/p/static/media/sp_mw5.41aa320d.png);
+    background-size: 638px 617px;
+    background-repeat: no-repeat;
+    background-position: -306px -565px;
+    width: 26px;
+    height: 26px;
+    margin: 6px;
+}
+.input_tag{
+    outline: none;
+    border: none;
+}
+.x_btn{
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ededed;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 12px;
+    margin: 2px;
+    background-color: inherit;
+}
+.write_article_post_box{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+.set_btn{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
+    color: #444;
+    border: 1px solid #ededed;
+    border-radius: 12px;
+    background-color: white;
+    cursor: pointer;
+}
+.set_btn::before{
+    content: "";
+    background-image: url(https://ssl.pstatic.net/static/nng/resource/p/static/media/sp_mw5.41aa320d.png);
+    background-size: 638px 617px;
+    background-repeat: no-repeat;
+    background-position: -515px -157px;
+    width: 17px;
+    height: 17px;
+    margin-right: 6px;
+}
+.post_btn_box{
+    display: flex;
+    gap: 10px;
+}
+.post_btn_box > button{
+    padding: 11px 30px;
+    font-size: 15px;
+    line-height: 18px;
+    border-radius: 8px;
+    border: 1px solid #ededed;
+    cursor: pointer;
+}
+.save_btn{
+    font-weight: 500;
+    color: #525662;
+}
+.post_btn{
+    width: 100px;
+    font-weight: 700;
+    color: #c2c4ca;
+    background-color: #858894;
+}

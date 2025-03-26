@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/main_page.css">
+    <link rel="stylesheet" href="../css/write_page.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header">
+            <div class="header_container container_box">
+                <div class="top_header">
+                    <ul class="header_L">
+                        <li class="logo_list">
+                            <a href="https://naver.com" id="logo_naver">
+                                <span class="blind">NAVER</span>
+                            </a>
+                        </li> 
+                        <li class="logo_list">
+                            <a href="https://game.naver.com" id="logo_game">
+                                <span class="blind">GAME</span>
+                            </a>
+                        </li>
+                        <li class="logo_list logo_list_text">
+                            <a href="https:/chzzk.naver.com" id="logo_chzzk">
+                                <span class="blind">치지직</span>
+                            </a>
+                        </li>
+                        <li class="logo_list logo_list_text">
+                            <a href="" id="logo_eSports">
+                                <span>e스포츠</span>
+                                <span class="blind">e스포츠</span>
+                            </a>
+                        </li>
+                        <li class="logo_list logo_list_text">
+                            <a href="" id="logo_PCgame">
+                                <span>PC게임</span>
+                                <span class="blind">PC게임</span>
+                            </a>
+                        </li>
+                        <li class="logo_list logo_list_text">
+                            <a href="" id="logo_orginer">
+                                <span>오리지널 시리즈</span>
+                                <span class="blind">오리지널 시리즈</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="header_R">
+                        <li class="header_search_box">
+                            <form action="#">
+                                <input type="text" class="header_search_bar" placeholder="라운지, 게시물 검색">
+                                <button type="reset" class="btn_reset"></button>
+                                <button type="submit" class="btn_submit"></button>
+                            </form>
+                        </li>
+                        <li class="ticket"></li>
+                        <li class="notice"></li>
+                        <li class="login_btn">
+                            <a href="login_page.html">로그인</a>
+                        </li>
+                        <li class="profile">
+                            <a href="#" class="profile_icon"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="top_header fixed_top_header"></div> <!-- top_header 안보이게 되면 fixed 적용 -->
+            </div>
+        </header>
+        <div class="menu_box container_box">
+            <div class="menu_container container_box">
+                <div class="main_banner">
+                    <div class="gradient gradient_left"></div>
+                    <div class="gradient gradient_right"></div>
+                </div>
+                <div class="main_title_box">
+                    <div class="icon_box"></div>
+                    <div class="title_box">
+                        <div class="main_title">
+                            <span>리그 오브 레전드</span>
+                        </div>
+                        <div class="sub_title">
+                            <span>MOBA</span>
+                            <span>PC</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main_menu">  <!-- 광고 베너 밑으로 내려가면 fxied 적용 -->
+                <div class="container_box">
+                    <ul class="main_menu_box">
+                        <li class="main_menu_list">
+                            <a href="#"><span>HOME</span></a>
+                        </li>
+                        <li class="main_menu_list">
+                            <a href="#"><span>게시판</span></a>
+                        </li>
+                        <li class="main_menu_list">
+                            <a href="#"><span>DB</span></a>
+                        </li>
+                        <li class="main_menu_list">
+                            <a href="#"><span>영상</span></a>
+                        </li>
+                        <li class="main_menu_list">
+                            <a href="#"><span>LCK 영상</span></a>
+                        </li>
+                    </ul>
+                    <div class="admin_lounge"></div>
+                </div>
+            </div> 
+        </div>
+        <div class="main_content">
+            <div class="main_container container_box">
+                <div class="panel_left">
+                    <div class="board_list border">
+                        <a href="#" class="btn_write">글쓰기</a>
+                        <a href="#" class="board_list_item">
+                            <span>전체 게시글</span>
+                        </a>
+                        <div class="board_list_title">
+                            <span>e스포츠</span>
+                        </div>
+                        <a href="#" class="board_list_item">
+                            <span>LCK 이야기</span>
+                        </a>
+                        <a href="#" class="board_list_item">
+                            <span>경기 평점</span>
+                        </a>
+                        <a href="#" class="board_list_item">
+                            <span>유저 경기평점</span>
+                        </a>
+                        <a href="#" class="board_list_item">
+                            <span>승부예측</span>
+                        </a>
+                        <a href="#" class="board_list_item">
+                            <span>모의 밴픽</span>
+                        </a>
+                        <div class="board_list_title">
+                            <span>커뮤니티</span>
+                        </div>
+                        <a href="#" class="board_list_item">
+                            <span>공지</span>
+                        </a>
+                        <a href="#" class="board_list_item">
+                            <span>자유</span>
+                        </a>
+                        <a href="#" class="board_list_item">
+                            <span>질문</span>
+                        </a>
+                        <a href="#" class="board_list_item">
+                            <span>뉴스</span>
+                        </a>
+                        <a href="#" class="board_list_item">
+                            <span>버그</span>
+                        </a>
+                        <a href="#" class="board_list_item">
+                            <span>오리지널 시리즈</span>
+                        </a>
+                        <a href="#" class="board_list_item">
+                            <span>챔피언 한줄평</span>
+                        </a>
+                        <a href="#" class="board_list_item">
+                            <span>라운지 이벤트</span>
+                        </a>
+                        <a href="#" class="board_list_item">
+                            <span>파티 모집</span>
+                        </a>
+                        <a href="#" class="board_list_item">
+                            <span>출석체크</span>
+                        </a>
+                        <a href="#" class="board_list_item">
+                            <span>창작 게시판</span>
+                        </a>
+                        <div class="board_list_title">
+                            <span>팁&공략</span>
+                        </div>
+                        <a href="#" class="board_list_item">
+                            <span>패치노트</span>
+                        </a>
+                        <a href="#" class="board_list_item">
+                            <span>공략</span>
+                        </a>
+                        <a href="#" class="board_list_item">
+                            <span>초보자 공략</span>
+                        </a>
+                        <a href="#" class="board_list_item">
+                            <span>공지</span>
+                        </a>
+                    </div>
+                    <div class="img_box border">
+                        이미지
+                    </div>
+                    <div class="info_box border">
+                        <ul class="info_ul">
+                            <li class="lounge_info">
+                                <span>라운지 이용 안내</span>
+                            </li>
+                            <li class="mission_info">
+                                <span>미션/보상 안내</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="write_article border">
+                    <div class="write_article_header">
+                        <strong class="write_article_title">글쓰기</strong>
+                        <div class="write_article_select">
+                            <span>게시판을 선택하세요</span>
+                        </div>
+                    </div>
+                    <div class="write_article_content">
+                        <input type="text" class="write_content_title" placeholder="제목을 입력해주세요">
+                    </div>
+                    <div class="toolbar_box">
+                        <!-- <ul class="toolbar_attach">
+                            <li class="toolbar_attach_li"></li>
+                            <li class="toolbar_attach_li"></li>
+                            <li class="toolbar_attach_li"></li>
+                            <li class="toolbar_attach_li"></li>
+                            <li class="toolbar_attach_li"></li>
+                            <li class="toolbar_attach_li"></li>
+                            <li class="toolbar_attach_li"></li>
+                            <li class="toolbar_attach_li"></li>
+                        </ul>
+                        <ul class="toolbar_text"></ul> -->
+                    </div>
+                    <div class="write_article_detail_box">
+                        <textarea spellcheck="false" name="" class="write_article_detail" id="write_article_detail" placeholder="함께 나누고 싶은 얘기를 남겨주세요."></textarea>
+                    </div>
+                    <div class="write_article_tag_box">
+                        <button class="write_article_tag" id="tag_info">
+                            <span>태그 입력(#으로 구분, 최대 10개)</span>
+                        </button>
+                    </div>
+                    <div class="write_article_post_box">
+                        <button class="set_btn">글쓰기 설정</button>
+                        <div class="post_btn_box">
+                            <button class="save_btn">저장</button>
+                            <button class="post_btn">등록</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer clearFix">
+            <a href="https://policy.naver.com/rules/service.html" target="_blank" class="footer_item__22TQB" rel="noopener noreferrer">네이버 이용약관</a>
+            <a href="/policy" target="_blank" class="footer_item__22TQB" rel="noopener noreferrer">네이버 게임 커뮤니티 가이드</a>
+            <a href="https://policy.naver.com/rules/privacy.html" target="_blank" class="footer_item__22TQB" rel="noopener noreferrer"><strong>개인정보 처리방침</strong></a>
+            <a href="https://help.naver.com/alias/navergame/gamecon2.naver" target="_blank" class="footer_item__22TQB" rel="noopener noreferrer">네이버 게임 고객센터</a>
+            <a href="https://game.naver.com/info" target="_blank" class="footer_item__22TQB" rel="noopener noreferrer">서비스 소개 및 제휴 안내</a>
+            <span class="footer_item__22TQB">대표번호 : 1588-3820</span>
+            <a href="https://www.navercorp.com" target="_blank" class="footer_item__22TQB" rel="noopener noreferrer"><strong>ⓒ NAVER Corp.</strong></a>
+        </footer>
+    </div>
+</body>
+<script src="../js/write_page.js"></script>
+</html>

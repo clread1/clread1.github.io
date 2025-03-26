@@ -1,8 +1,10 @@
 #wrap{
+    width: 1280px;
+    margin: 0 auto;
     background-color: #f8f9fd;
 }
 .header{
-    width: 100%;
+    width: 1280px;
     height: 60px;
 }
 .header_container{
@@ -134,16 +136,38 @@ a > span{
     background: url(../img/notice.png) no-repeat center / contain;
     cursor: pointer;
 }
+.login_btn{
+    width: 60px;
+    height: 30px;
+    margin: 4px 0 4px 4px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #444;
+    text-align: center;
+    line-height: 26px;
+}
+.login_btn > a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
 .profile{
+    display: none;
     width: 34px;
     height: 34px;
     border-radius: 50%;
     margin: 3px;
     background: url(../img/profile.png) no-repeat center / contain;    cursor: pointer;
 }
+.profile > a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
 /* main_menu */
 .menu_box{
-    width: 100%;
     height: 250px;
     background-color: rgb(129 113 133);
     position: relative;
@@ -288,7 +312,6 @@ a > span{
 }
 .board_list{
     padding: 20px 24px;
-    border-radius: 12px;
 }
 .btn_write{
     display: block;
@@ -342,12 +365,10 @@ a > span{
 .img_box{
     height: 283px;
     margin-top: 24px;
-    border-radius: 12px;
     padding: 30px 24px 20px;
 }
 .info_box{
     margin-top: 24px;
-    border-radius: 12px;
     padding: 30px 24px 20px;
 }
 .info_ul{
@@ -396,7 +417,6 @@ a > span{
 }
 .board_title{
     padding: 26px 24px 25px;
-    border-radius: 12px;
     font-weight: 900;   
 }
 .table_bar{
@@ -472,7 +492,6 @@ a > span{
     text-align: left;
     font-size: 14px;
     padding: 15px 24px 21px;
-    border-radius: 12px;
 }
 .board_table_list{
 
@@ -511,7 +530,6 @@ a > span{
 .board_pagination{
     margin-top: 15px;
     padding: 18px 0;
-    border-radius: 12px;
     text-align: center;
     box-shadow: 0 2px 30px 0 rgba(0, 0, 0, .06);
 }
@@ -535,7 +553,6 @@ a > span{
     position: relative;
     padding: 11px;
     border: 1px solid rgba(0, 0, 0, .1);
-    border-radius: 12px;
     background-color: #fff;
 }
 
@@ -548,7 +565,6 @@ a > span{
 }
 .popular_tab{
     padding: 30px 24px 30px 21px;
-    border-radius: 12px;
 }
 .popular_tab_title{
     font-size: 17px;
@@ -580,7 +596,6 @@ a > span{
     position: relative;
     margin-top: 24px;
     padding: 23px 20px 18px;
-    border-radius: 12px;
     box-shadow: 0 2px 30px 0 rgba(0, 0, 0, .06);
 }
 .point_quest_header{
@@ -628,13 +643,13 @@ a > span{
 }
 /* footer */
 .footer{
-    width: 100%;
+    width: 1280px;
+    margin: 0 auto;
     position: relative;
     z-index: 2;
     padding: 50px 0 65px;
     text-align: center;
 
-    display: inline-block;
     font-size: 12px;
     line-height: 15px;
     vertical-align: top;

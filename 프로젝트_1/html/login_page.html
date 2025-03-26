@@ -6,64 +6,35 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/login_page.css">
-
 </head>
 <body>
-    <header class="header">
-        <div class="header_inner">
-            <a href="https://www.naver.com"></a>
-            <div class="lang">
-                <select name="lang_switch" id="lang_switch" title="언어선택" class="sel">
-                    <option value="ko_KR">한국어</option>
-                    <option value="en_US">English</option>
-                    <option value="zh-Hans_CN">中文(简体)</option>
-                    <option value="zh-Hant_TW">中文(台灣)</option>
-                </select>
+    <div id="wrap">
+        <header class="header">
+            <a href="https://naver.com">
+                <div class="logo"></div>
+            </a>
+        </header>
+        <div class="login_box">
+            <div class="login_data id_box">
+                <div class="placeholder">아이디 또는 전화번호</div>
+                <input type="text">
+            </div>
+            <div class="login_data pw_box">
+                <div class="placeholder">비밀번호</div>
+                <input type="password">
             </div>
         </div>
-    </header>
-    <div class="login_container">
-        <div class="login_header"></div>
-        <div class="user_input_box">
-            <div class="user_id_box"></div>
-            <div class="user_pw_box"></div>
+        <div class="login_btn">
+            <a href="main_page.html?admin=1">로그인</a>
         </div>
-        <div class="btn_box">
-            <div class="login_maintain_btn"></div>
-            <div class="IP_btn"></div>
-            <div class="login_btn"></div>
+        <div class="find_box">
+            <div class="find_pw">비밀번호 찾기</div>
+            <div class="find_id">아이디 찾기</div>
+            <div class="admin">회원가입</div>
         </div>
     </div>
-    <div class="find_box">
-        <div class="find_pw"></div>
-        <div class="find_id"></div>
-        <div class="admin"></div>
-    </div>
-
-    <div class="bot_banner">
-        <!-- <img src="https://ssl.pstatic.net/melona/libs/1378/1378592/6071d8bb0b632e79c4f6_20250324184811835.jpg" alt="[광고]산불피해 긴급모금 삶의 터전을 잃은 이웃들 지금 해피빈에서 희망을 보내주세요!" style="vertical-align:top;width:100%;height:auto;border:none;"> -->
-    </div>
-
-    <!-- <footer class="footer">
-        <div class="footer_inner">
-            <ul>
-                <li>
-                    <a target="_blank" class="footer_item nlog-click" href="http://www.naver.com/rules/service.html" id="fot.agreement"><span class="text">이용약관</span></a>
-                </li>
-                <li>
-                    <a target="_blank" class="footer_item nlog-click" href="http://www.naver.com/rules/privacy.html" id="fot.privacy"><span class="text"><strong>개인정보처리방침</strong></span></a>
-                </li>
-                <li>
-                    <a target="_blank" class="footer_item nlog-click" href="http://www.naver.com/rules/disclaimer.html" id="fot.disclaimer"><span class="text">책임의 한계와 법적고지</span></a>
-                </li>
-                <li>
-                    <a target="_blank" class="footer_item nlog-click" href="https://help.naver.com/alias/membership/p.membership/main.naver" id="fot.help"><span class="text">회원정보 고객센터</span></a>
-                </li>
-            </ul>
-            <ul>
-
-            </ul>
-        </div>
-    </footer> -->
 </body>
+
+<script src="../js/login_page.js"></script>
+
 </html>
