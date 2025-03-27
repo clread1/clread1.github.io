@@ -3,33 +3,65 @@
     let tag = document.getElementsByClassName('write_article_tag');
     let input = document.getElementsByClassName('input_tag');
     let count = 0;
-    let idx = 1;
+    let idx = 0;
 
+    // function tag_out(idx){
+        
+    // }
     function tag_input(){
         $('.input_tag').keydown(function(){
             if(event.keyCode == 13) {
                 let input_value = document.getElementsByClassName(`input_tag`)[0].value;
-                document.getElementsByClassName('tag_num')[idx - 1].innerHTML = `<span>${input_value}</span>
-                                                                            <button class="x_btn">x</button>`;
-                                                                            
-                idx++;
+                let span = document.createElement(`span`);
+                let button = document.createElement(`button`);
+                let tmp_btn = document.createElement(`button`);
+                let input = document.createElement(`input`);
+
+                span.append(`${input_value}`);
+                button.setAttribute('class', 'x_btn');
+
+                // document.getElementsByClassName('tag_num')[idx].innerHTML = `<span>${input_value}</span>
+                //                                                             <button class="x_btn" id="x_btn${idx}">x</button>`;
+                document.getElementsByClassName('tag_num')[idx].removeChild(document.getElementsByClassName('input_tag')[0]);
+                document.getElementsByClassName('tag_num')[idx].append(span);
+                document.getElementsByClassName('tag_num')[idx].append(button);
+
                 count++;
                 if(count < 10){
-                    tag_box.innerHTML += `<button class="write_article_tag tag_num">
-                                            <input type="text" class="input_tag">
-                                        </button>`
+                    
+                    input.setAttribute('class', 'input_tag');
+                    tmp_btn.setAttribute('class', 'write_article_tag tag_num');
+                    tmp_btn.append(input);
+                    tag_box.append(tmp_btn);
+                    // tag_box.innerHTML += `<button class="write_article_tag tag_num">
+                    //                         <input type="text" class="input_tag">
+                    //                     </button>`
+                    
                     tag_input();
                 }
+                // let x_btn = document.getElementsByClassName(`x_btn`)[idx];
+                // x_btn.addEventListener('click', function(){
+                    
+                // })
+                idx++;
             }
         })
     }
-
+    
     tag_info.addEventListener('click', function(){
         tag_info.style.display = "none";
-        tag_box.innerHTML = `<button class="write_article_tag tag_num">
-                                <input type="text" class="input_tag">
-                            </button>`
+        // tag_box.innerHTML += `<button class="write_article_tag tag_num">
+        //                         <input type="text" class="input_tag">
+        //                     </button>`
+        let tmp_btn = document.createElement(`button`);
+        let input = document.createElement(`input`);
+        input.setAttribute('class', 'input_tag');
+        tmp_btn.setAttribute('class', 'write_article_tag tag_num');
+        tmp_btn.append(input);
+        tag_box.append(tmp_btn);
         tag_input();
     })
+
+    
 
     

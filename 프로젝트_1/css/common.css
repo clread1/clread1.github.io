@@ -11,6 +11,10 @@ a{
     text-decoration: none;
     color: inherit;
 }
+input{
+    border: none;
+    outline: none;
+}
 .blind{
     display: block;
     width: 0;

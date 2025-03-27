@@ -1,0 +1,286 @@
+#wrap{
+}
+.form{
+    width: 500px;
+    margin: 0 auto;
+}
+.header{
+    padding: 16px 115px 16px 20px;
+}
+.logo{
+    content: '';
+    background-image: url(https://ssl.pstatic.net/static/nid/join/m_sp_06_realname_48b1e603.png);
+    background-size: 372px 326px;
+    background-repeat: no-repeat;
+    background-position: 0px -244px;
+    background-repeat: no-repeat;
+    width: 94px;
+    height: 18px;
+    display: block;
+}
+.main_content{
+    padding-top: 30px;
+    position: relative;
+}
+.label{
+    display: inline-block;
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    padding-right: 23px;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -.4px;
+    color: #929294;
+    white-space: nowrap;
+}
+.label::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(https://ssl.pstatic.net/static/nid/join/m_sp_06_realname_48b1e603.png);
+    background-size: 372px 326px;
+    background-position: -342px -270px;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+.form_section{
+    margin: 20px 20px 0px 20px;
+}
+.form_list{
+    position: relative;
+    margin-bottom: 10px;
+    border: 1px solid #c6c6c6;
+    border-radius: 6px;
+}
+.form_list > div{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    z-index: 5;
+    border-bottom: 1px solid #c6c6c6;
+}
+.form_list > div:last-child{
+    border-bottom: none;
+}
+.input{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 22px;
+    color: #757575;
+
+    border-radius: inherit;
+    overflow: hidden;
+    font-size: 15px;
+
+    border-radius: 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+.id_box{
+    height: 100%;
+}
+.id_box::before{
+    content: "";
+    background-image: url(https://ssl.pstatic.net/static/nid/join/m_sp_06_realname_48b1e603.png);
+    background-size: 372px 326px;
+    background-position: -342px -64px;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 9px;
+}
+.input_box{
+    height: 100%;
+    padding: 0px 10px 0px 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.id_naver{
+    padding: 0 4px 0 6px;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -.2px;
+    color: #767678;
+}
+.pw_box::before{
+    content: '';
+    background-image: url(https://ssl.pstatic.net/static/nid/join/m_sp_06_realname_48b1e603.png);
+    background-size: 372px 326px;
+    background-position: -310px 0;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 9px;
+}
+.mail_box::before{
+    content: '';
+    background-image: url(https://ssl.pstatic.net/static/nid/join/m_sp_06_realname_48b1e603.png);
+    background-size: 372px 326px;
+    background-position: -96px -296px;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 9px;
+}
+.name_box::before{
+    content: '';
+    background-image: url(https://ssl.pstatic.net/static/nid/join/m_sp_06_realname_48b1e603.png);
+    background-size: 372px 326px;
+    background-position: -342px -64px;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 9px;
+}
+.birthday_box::before{
+    content: '';
+    background-image: url(https://ssl.pstatic.net/static/nid/join/m_sp_06_realname_48b1e603.png);
+    background-size: 372px 326px;
+    background-position: -192px -296px;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 9px;
+}
+.telecom_box::before{
+    content: '';
+    background-image: url(https://ssl.pstatic.net/static/nid/join/m_sp_06_realname_48b1e603.png);
+    background-size: 372px 326px;
+    background-position: -224px -296px;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 9px;
+}
+.placeholder{
+    font-size: 15px;
+    color: #757575;
+}
+.gender_box{
+    display: flex;
+    gap: 10px;
+    padding: 9px;
+    box-sizing: border-box;
+}
+.btn{
+    display: flex;
+    width: 50%;
+    color: #c6c6c6;
+    border-radius: 6px;
+}
+.btn > label{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #c6c6c6;
+    background-color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #c6c6c6;
+}
+.btn > label.border_R{
+    border-radius: 6px 0 0 6px;
+    border-right: 1px solid #c6c6c6;
+}
+.btn > label.border_L{
+    border-radius: 0 6px 6px 0;
+    border-left: none;
+}
+.gender_check:checked + label,
+.foreign_check:checked + label{
+    color: #09aa5c;
+    border: 1px solid #09aa5c;
+}
+.phone_box::before{
+    content: '';
+    background-image: url(https://ssl.pstatic.net/static/nid/join/m_sp_06_realname_48b1e603.png);
+    background-size: 372px 326px;
+    background-position: -310px -128px;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 9px;
+}
+.agree_label{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 45px;
+    padding-left: 45px;
+    position: relative;
+    cursor: pointer;
+}
+.agree_label::before{
+    content: '';
+    background-image: url(https://ssl.pstatic.net/static/nid/join/m_sp_06_realname_48b1e603.png);
+    background-size: 372px 326px;
+    background-position: -342px -200px;
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+#agree_check:checked ~ .agree_label::before{
+    background-position: -342px -224px;
+}
+.em{
+    color: #09aa5c;
+    display: inline-block;
+    margin-right: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -.6px;
+    font-style: normal;
+}
+.agree_label > span{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -.8px;
+    color: #222;
+    vertical-align: middle;
+}
+.form_bot{
+    margin: 0 20px;
+}
+.btn_admin{
+    width: 100%;
+    padding: 14px 0;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, .05);
+    background: #09aa5c;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 50px;
+}

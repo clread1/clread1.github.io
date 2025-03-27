@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/signUp_page.css">
+</head>
+<body>
+    <div id="wrap">
+        <div class="form">
+            <header class="header">
+                <div class="logo"></div>
+            </header>
+            <main class="main_content">
+                <div class="label">
+                    <span>실명 인증된 아이디로 가입</span>
+                </div>
+                <div class="form_section">
+                    <div class="form_list">
+                        <div class="id_box">
+                            <div class="input_box">
+                                <input type="text" id="id" name="id" placeholder="아이디" class="input" value maxlength="20" autocapitalize="off">
+                                <div class="id_naver">
+                                    @naver.com
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pw_box">
+                            <div class="input_box">
+                                <input type="password" id="pw" name="pw" placeholder="비밀번호" class="input" value maxlength="20" autocapitalize="off">
+                            </div>
+                        </div>
+                        <div class="mail_box">
+                            <div class="input_box">
+                                <input type="text" id="mail" name="mail" placeholder="[선택] 이메일주소 (비밀번호 찾기 등 본인 확인용)" class="input" value maxlength="20" autocapitalize="off">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_list">
+                        <div class="name_box">
+                            <div class="input_box">
+                                <input type="text" id="name" name="name" placeholder="이름" class="input" value maxlength="20" autocapitalize="off">
+                            </div>
+                        </div>
+                        <div class="birthday_box">
+                            <div class="input_box">
+                                <input type="text" id="birth" name="birth" placeholder="생년월일 8자리" class="input" value maxlength="20" autocapitalize="off">
+                            </div>
+                        </div>
+                        <div class="telecom_box">
+                            <div class="input_box">
+                                <span class="placeholder">통신사 선택</span>
+                            </div>
+                        </div>
+                        <div class="gender_box">
+                            <div class="gender_btn btn">
+                                <input type="radio" name="gender_check" id="male" class="gender_check blind">
+                                <label for="male" class="male_btn border_R">
+                                    남자
+                                </label>
+                                <input type="radio" name="gender_check" id="female" class="gender_check blind">
+                                <label for="female" class="female_btn border_L">
+                                    여자
+                                </label>
+                            </div>
+                            <div class="foreign_btn btn">
+                                <input type="radio" name="foreign_check" id="local" class="foreign_check blind">
+                                <label for="local" class="local_btn border_R">
+                                    내국인
+                                </label>
+                                <input type="radio" name="foreign_check" id="foreign" class="foreign_check blind">
+                                <label for="foreign" class="foreign_btn border_L">
+                                    외국인
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_list">
+                        <div class="phone_box">
+                            <div class="input_box">
+                                <input type="text" id="phone" name="phone" placeholder="휴대전화번호" class="input" value maxlength="20" autocapitalize="off">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_list">
+                        <div class="agree_box">
+                            <input type="checkbox" class="blind" id="agree_check">
+                            <label for="agree_check" class="agree_label">
+                                <em class="em">[필수]</em>
+                                <span>인증 약관 전체동의</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_bot">
+                    <div class="btn_admin">
+                        <span>인증요청</span>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
