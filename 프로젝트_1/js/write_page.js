@@ -1,10 +1,16 @@
-    let tag_info = document.getElementById('tag_info')
-    let tag_box = document.getElementsByClassName('write_article_tag_box')[0];
-    let tag = document.getElementsByClassName('write_article_tag');
-    let input = document.getElementsByClassName('input_tag');
-    let count = 0;
-    let idx = 0;
+let write_article_detail = document.getElementById('write_article_detail');
+let save = document.getElementsByClassName('save_btn')[0];
+let post = document.getElementsByClassName('post_btn')[0];
+post.addEventListener('click', function(){
+    location.href = "file:///C:/Users/user1/Desktop/web/프로젝트_1/html/main_page.html";
+})
 
+let tag_info = document.getElementById('tag_info')
+let tag_box = document.getElementsByClassName('write_article_tag_box')[0];
+let tag = document.getElementsByClassName('write_article_tag');
+let input = document.getElementsByClassName('input_tag');
+let count = 0;
+let idx = 0;
     // function tag_out(idx){
         
     // }

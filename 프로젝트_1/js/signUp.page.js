@@ -11,27 +11,25 @@ let array_input_a = [user_id, user_pw, user_name, user_birth, user_phone]
 let array_input = ['id', 'pw', 'name', 'birth', 'phone']
 let array_text = ['아이디', '비밀번호', '이름', '생년월일', '휴대전화번호']
 
-
 let id_check = false;
 let pw_check = false;
 let name_check = false;
 let birth_check = false;
 let phone_check = false;
 let agree_check = false;
+let array_check = [id_check, pw_check, name_check, birth_check, phone_check]
 
-
-function check(input, text, check){
+function check(input, text, index){
     let get_input = document.getElementById(input);
     if(get_input.value == ''){
         get_input.placeholder= `${text}(필수)`;
         get_input.style.color= 'red';
         get_input.style.textDecoration= 'underline';
-        check = false;
+        array_check[index] = false;
     }
     else{
-        check = true;
+        array_check[index] = true;
     }
-    
 }
 function check2(get_input){
     get_input.style.color= '#757575';
@@ -52,7 +50,6 @@ let btn_admin = document.getElementById('btn_admin')
     let user_birth = document.getElementById('birth').value;
     let user_phone = document.getElementById('phone').value;
     // let user_telecom = document.getElementById('telecom').value;
-    let array_check = [id_check, pw_check, name_check, birth_check, phone_check]
 
     if($('#male').is(':checked')){ // 성별 체크
         user_gender = 'male';
@@ -68,8 +65,9 @@ let btn_admin = document.getElementById('btn_admin')
     }
 
     for(let i=0; i<5; i++){ // 필수 입력사항 입력 여부 체크
-        check(array_input[i], array_text[i], array_check[i]);
+        check(array_input[i], array_text[i], i);
     }
+
     if($('#agree_check').is(':checked')){ // 인증 약관 동의 여부 체크
         agree_check = true;
     }
@@ -77,9 +75,10 @@ let btn_admin = document.getElementById('btn_admin')
         agree_check = false;
     }
     
-    let final_check = id_check && pw_check && name_check && birth_check && phone_check && agree_check;
-    console.log(final_check, id_check, agree_check);
+    let final_check = array_check[0] && array_check[1] && array_check[2] && array_check[3] && array_check[4]
+
     if(final_check == true){
-        alert("페이지 이동");
+        alert('회원가입이 완료되었습니다.');
+        location.href = "file:///C:/Users/user1/Desktop/web/프로젝트_1/html/login_page.html"
     }
 })
