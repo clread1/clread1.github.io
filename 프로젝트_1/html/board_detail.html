@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../css/main_page.css">
     <link rel="stylesheet" href="../css/board_detail.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="../js/postData.js"></script>
+    <script src="../js/commentData.js"></script>
 </head>
 <body>
     <div id="wrap">
@@ -26,7 +28,7 @@
                             </a>
                         </li>
                         <li class="logo_list logo_list_text">
-                            <a href="https:/chzzk.naver.com" id="logo_chzzk">
+                            <a href="https://chzzk.naver.com" id="logo_chzzk">
                                 <span class="blind">치지직</span>
                             </a>
                         </li>
@@ -219,115 +221,31 @@
                         </div>
                         <div class="main_content border">
                             <div class="detail_content">
-                                <button class="this_board_list border">
-                                    <span>공지 ></span>
-                                </button>
-                                <div class="detail_title">
-                                    <span>LCK 주간 HOT 매치 승부예측 이벤트!</span>
-                                </div>
-                                <div class="user_info_header">
-                                    <div class="user_info_box">
-                                        <div class="user_profile"></div>
-                                        <div class="user_name_box">
-                                            <span class="user_name">NAVER GAME</span>
-                                        </div>
-                                    </div>
-                                    <div class="menu_btn_box">
-                                        <div class="bookmark_btn"></div>
-                                        <div class="menu_btn"></div>
-                                    </div>
-                                </div>
-                                <div class="board_detail">
-                                    <p>안녕하세요 네이버게임입니다.</p> 
-                                    <p>많은 분들이 기다리시던 LCK 2021 스프링 시즌이 3주차에 접어들었습니다!</p>
-                                    <p>벌써 많은 명경기가 쏟아지면서 '황부리그' LCK를 기다리시던 유저들의 기대감을 잘 채워주고 있다고 생각하는데요, </p>
-                                </div>
-                                <div class="newest_post_box">
-                                    <div class="newest_post">
-                                        <div class="newest_header">
-                                            <div class="user_profile user_profile_m"></div>
-                                            <span class="user_name user_name_m">NAVER GAME</span><span>님의 최신글</span>
-                                        </div>
-                                        <ul class="newest_list_ul">
-                                            <li class="newest_list_li">
-                                                <span>2025 LCK 경기 관람 이벤트</span>
-                                            </li>
-                                            <li class="newest_list_li">
-                                                <span>2025 LCK 컵 PO 직관 티켓을 티켓 교환소에서 획득해보세요!</span>
-                                            </li>
-                                            <li class="newest_list_li">
-                                                <span>2025 LCK 컵 직관 티켓을 교환소에서</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="buff_box">
-                                    <div class="buff_btn_box">
-                                        <div class="buff_btn"></div>
-                                        <div class="count buff_count">
-                                            <span>48</span>
-                                        </div>
-                                    </div>
-                                    <div class="nuff_btn_box">
-                                        <div class="nuff_btn"></div>
-                                        <div class="count nuff_count">
-                                            <span>1</span>
-                                        </div>
-                                    </div>
+                                <div class="detail_area">
+                                    <!-- 본문 -->
                                 </div>
                                 <div class="comment_area">
                                     <div class="comment_header"></div>
-                                    <div class="input_comment">
-                                        <div class="user_profile user_profile_t"></div>
-                                        <textarea name="comment" id="comment" placeholder="댓글을 입력하세요" style="resize: none;"></textarea>
-                                    </div>
-                                    <div class="comment_bottom">
-                                        <div class="tool_btn_box">
-                                            <div class="tool_btn sticker_btn"></div>
-                                            <div class="tool_btn emoji_btn"></div>
-                                            <div class="tool_btn image_btn"></div>
-                                            <div class="tool_btn secret_btn"></div>
+                                    <div class="input_comment_box">
+                                        <div class="input_comment">
+                                            <div class="user_profile user_profile_t"></div>
+                                            <textarea name="comment" id="comment" placeholder="댓글을 입력하세요" style="resize: none;"></textarea>
                                         </div>
-                                        <button class="comment_post_btn">
-                                            <span>등록</span>
-                                        </button>
+                                        <div class="comment_bottom">
+                                            <div class="tool_btn_box">
+                                                <div class="tool_btn sticker_btn"></div>
+                                                <div class="tool_btn emoji_btn"></div>
+                                                <div class="tool_btn image_btn"></div>
+                                                <div class="tool_btn secret_btn"></div>
+                                            </div>
+                                            <button class="comment_post_btn">
+                                                <span>등록</span>
+                                            </button>
+                                        </div>
                                     </div>
                                     <div class="comment_banner"></div>
-                                    <div class="comment_box">
-                                        <div class="user_profile comment_user_profile"></div>
-                                        <div class="comment_top">
-                                            <div class="name_detail_box">
-                                                <div class="user_name">asdf</div>
-                                                <div class="comment_detail" style="word-break:break-all">fsdafadsfdsafasfaesfeafesafseafasfeafsdafadsfdsafasfaesfeafesafseafasfeafsdafadsfdsafasfaesfeafesafseafasfeafsdafadsfdsafasfaesfeafesafseafasfeafsdafadsfdsafasfaesfeafesafseafasfeafsdafadsfdsafasfaesfeafesafseafasfeafsdafadsfdsafasfaesfeafesafseafasfeafsdafadsfdsafasfaesfeafesafseafasfeafsdafadsfdsafasfaesfeafesafseafasfea</div>
-                                            </div>
-                                        </div>
-                                        <div class="comment_item_bottom">
-                                            <div class="reply_box">
-                                                <div class="comment_date">
-                                                    <span>2025.03.28</span>
-                                                </div>
-                                                <div class="write_reply">
-                                                    <span>답글 쓰기</span>
-                                                </div>
-                                                <div class="reply_list">
-                                                    <span>답글</span><span>5</span>
-                                                </div>
-                                            </div>
-                                            <div class="comment_buff_box">
-                                                <div class="buff_btn_box">
-                                                    <div class="comment_buff_btn"></div>
-                                                    <div class="count comment_buff_count">
-                                                        <span>13</span>
-                                                    </div>
-                                                </div>
-                                                <div class="nuff_btn_box">
-                                                    <div class="comment_nuff_btn"></div>
-                                                    <div class="count comment_nuff_count">
-                                                        <span>2</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div class="comment_box_area">
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -408,9 +326,6 @@
             <a href="https://www.navercorp.com" target="_blank" class="footer_item__22TQB" rel="noopener noreferrer"><strong>ⓒ NAVER Corp.</strong></a>
         </footer>
     </div>
+    <script src="../js/board_datail.js"></script>
 </body>
-
-<script src="../js/main_page.js"></script>
-<script src="../js/board_datail.js"></script>
-
 </html>

@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/login_page.css">
+    <script src="../js/loginData.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 </head>
 <body>
@@ -17,16 +18,20 @@
         </header>
         <div class="login_box">
             <div class="login_data id_box">
-                <div class="placeholder">아이디 또는 전화번호</div>
-                <input type="text">
+                <div class="placeholder" id="id_placeholder">
+                    <span id="id_placeholder_text">아이디 또는 전화번호</span>
+                </div>
+                <input type="text" id="user_id" value="">
             </div>
             <div class="login_data pw_box">
-                <div class="placeholder">비밀번호</div>
-                <input type="password">
+                <div class="placeholder" id="pw_placeholder">
+                    <span id="pw_placeholder_text">비밀번호</span>
+                </div>
+                <input type="password" id="user_pw">
             </div>
         </div>
-        <div class="login_btn">
-            <a href="main_page.html?admin=1">로그인</a>
+        <div class="login_btn" id="login_btn">
+            <span>로그인</span>
         </div>
         <div class="find_box">
             <div class="find_pw">비밀번호 찾기</div>
@@ -34,8 +39,6 @@
             <div class="admin">회원가입</div>
         </div>
     </div>
+    <script src="../js/login_page.js"></script>
 </body>
-
-<script src="../js/login_page.js"></script>
-
 </html>

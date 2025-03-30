@@ -499,7 +499,8 @@ a > span{
     padding: 15px 24px 21px;
 }
 .board_table_list{
-
+    border-collapse: collapse;
+    padding: 0;
 }
 .board_table_category_area{
     height: 40px;

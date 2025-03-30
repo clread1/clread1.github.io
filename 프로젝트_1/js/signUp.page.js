@@ -74,11 +74,10 @@ let btn_admin = document.getElementById('btn_admin')
     else{
         agree_check = false;
     }
-    
-    let final_check = array_check[0] && array_check[1] && array_check[2] && array_check[3] && array_check[4]
+    let final_check = array_check[0] && array_check[1] && array_check[2] && array_check[3] && array_check[4] && agree_check;
 
     if(final_check == true){
         alert('회원가입이 완료되었습니다.');
-        location.href = "file:///C:/Users/user1/Desktop/web/프로젝트_1/html/login_page.html"
+        location.href = "file:///C:/Users/home/Desktop/web/프로젝트_1/html/login_page.html"
     }
 })
