@@ -2,7 +2,7 @@ let write_article_detail = document.getElementById('write_article_detail');
 let save = document.getElementsByClassName('save_btn')[0];
 let post = document.getElementsByClassName('post_btn')[0];
 post.addEventListener('click', function(){
-    location.href = "file:///C:/Users/user1/Desktop/web/프로젝트_1/html/main_page.html";
+    location.href = "file:///C:/Users/home/Desktop/web/프로젝트_1/html/main_page.html";
 })
 
 let tag_info = document.getElementById('tag_info')
