@@ -36,7 +36,6 @@ let write = document.getElementsByClassName('btn_write')[0];
             alert('로그인 후 이용할 수 있습니다')
         }
     })
-let cur_pagination_page = 1;
     function cur_pagination(key){
         let url = location.href;
         url = url.split("?");
@@ -51,11 +50,10 @@ let cur_pagination_page = 1;
         }
         return 1;
     }
-cur_pagination_page = cur_pagination('page');
+let cur_pagination_page = cur_pagination('page');
 
 let tbody = document.getElementById('tbody');
 let btn_pagination_page_box = document.getElementsByClassName('btn_pagination_page_box')[0];
-let pagination_page = 1;
     for(let i=0; i<25; i++){
         let idx = ((25 * (cur_pagination_page - 1)) + i)
         tbody.innerHTML += `<tr class="board_table_detail">
@@ -80,12 +78,9 @@ let pagination_page = 1;
                             </td>
                         </tr>`
     }
-    for(let i=0; i<POST_LIST.length; i++){ // pagination 버튼 게시글 25개마다 한개씩 추가
-        if((i != 0) && (i % 25 == 0)){
-            pagination_page ++;
-            btn_pagination_page_box.innerHTML += `<button class="btn_pagination btn_pagination_page">${pagination_page}</button>`
-        }
-    }
+    // for(let i=0; i<(POST_LIST.length / 25); i++){ // pagination 버튼 게시글 25개마다 한개씩 추가
+    //     btn_pagination_page_box.innerHTML += `<button class="btn_pagination btn_pagination_page">${i}</button>`
+    // }
 
 let btn_pagination_page = document.getElementsByClassName('btn_pagination_page');
     for(let i=0; i<btn_pagination_page.length; i++){
