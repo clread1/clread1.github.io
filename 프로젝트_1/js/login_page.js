@@ -42,7 +42,7 @@ login_btn.addEventListener('click', function(){
             if(user_id.value == USER_LIST[count].user_id && user_pw.value == USER_LIST[count].user_pw){
                 login_chk = true;
                 alert('로그인 되었습니다');
-                location.href = "file:///C:/Users/home/Desktop/web/프로젝트_1/html/main_page.html?admin=1" 
+                location.href = "https://clread1.github.io/project1/프로젝트_1/html/main_page.html?admin=1" 
                 break;
             }
             count++;
@@ -55,5 +55,5 @@ login_btn.addEventListener('click', function(){
 
 let admin_page = document.getElementsByClassName('admin')[0];
 admin_page.addEventListener('click', function(){
-    location.href = "file:///C:/Users/home/Desktop/web/프로젝트_1/html/signUp_page.html"
+    location.href = "https://clread1.github.io/project1/프로젝트_1/html/signUp_page.html"
 })

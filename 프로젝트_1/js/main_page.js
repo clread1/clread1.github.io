@@ -30,7 +30,7 @@ let write = document.getElementsByClassName('btn_write')[0];
     write.addEventListener('click', function(){
         if(login == true){
             // location.href = "file:///C:/Users/user1/Desktop/web/프로젝트_1/html/write_page.html";
-            location.href ="file:///C:/Users/home/Desktop/web/프로젝트_1/html/write_page.html"
+            location.href ="https://clread1.github.io/project1/프로젝트_1/html/write_page.html"
         }
         else{
             alert('로그인 후 이용할 수 있습니다')
@@ -42,7 +42,7 @@ let tbody = document.getElementById('tbody');
         tbody.innerHTML += `<tr class="board_table_detail">
                             <td>
                                 <div class="board_table_detail_title">
-                                    <a href="file:///C:/Users/home/Desktop/web/프로젝트_1/html/board_detail.html?post_no=${POST_LIST[i].post_no}">${POST_LIST[i].post_title}</a>
+                                    <a href="https://clread1.github.io/project1/프로젝트_1/html/board_detail.html?post_no=${POST_LIST[i].post_no}">${POST_LIST[i].post_title}</a>
                                 </div>
                             </td>
                             <td>
