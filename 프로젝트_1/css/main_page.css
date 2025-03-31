@@ -534,6 +534,8 @@ a > span{
     cursor: pointer;
 }
 .board_pagination{
+    display: flex;
+    justify-content: center;
     margin-top: 15px;
     padding: 18px 0;
     text-align: center;
@@ -546,8 +548,13 @@ a > span{
     font-size: 14px;
     line-height: 17px;
     vertical-align: top;
+    background-color: white;
     color: #697183;
     cursor: pointer;
+}
+.btn_pagination_cur{
+    background-color: #f0f0f0;
+    color: rgb(34, 36, 40);
 }
 .btn_pagination:hover{
     text-decoration: underline;

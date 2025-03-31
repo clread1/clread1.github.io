@@ -36,28 +36,60 @@ let write = document.getElementsByClassName('btn_write')[0];
             alert('로그인 후 이용할 수 있습니다')
         }
     })
+let cur_pagination_page = 1;
+    function cur_pagination(key){
+        let url = location.href;
+        url = url.split("?");
+        if(url.length > 1){ // 1개보다 크면 정보가(?) 1개 이상 있다 라는 뜻
+            url = url[1].split("&") // [admin=1, page=1]
+            for(let i=0; i<url.length; i++){
+                let tmp_url = url[i].split("=") // i=0, admin=1 => [admin, 1]  i=1, page=1 => [page, 1]
+                if(tmp_url[0] == key){ // tmp_url == page 
+                    return tmp_url[1]; // return page번호 
+                }
+            }
+        }
+        return 1;
+    }
+cur_pagination_page = cur_pagination('page');
 
 let tbody = document.getElementById('tbody');
-    for(let i=0; i<POST_LIST.length; i++){
+let btn_pagination_page_box = document.getElementsByClassName('btn_pagination_page_box')[0];
+let pagination_page = 1;
+    for(let i=0; i<25; i++){
+        let idx = ((25 * (cur_pagination_page - 1)) + i)
         tbody.innerHTML += `<tr class="board_table_detail">
                             <td>
                                 <div class="board_table_detail_title">
-                                    <a href="https://clread1.github.io/프로젝트_1/html/board_detail.html?post_no=${POST_LIST[i].post_no}">${POST_LIST[i].post_title}</a>
+                                    <a href="https://clread1.github.io/프로젝트_1/html/board_detail.html?post_no=${POST_LIST[idx].post_no}">${POST_LIST[idx].post_title}</a>
                                 </div>
                             </td>
                             <td>
                                 <div class="board_table_detail_writer">
-                                    <span>${POST_LIST[i].post_writer}</span>
+                                    <span>${POST_LIST[idx].post_writer}</span>
                                 </div>
                             </td>
                             <td>
-                                <span class="board_table_detail_date">${POST_LIST[i].post_date}</span>
+                                <span class="board_table_detail_date">${POST_LIST[idx].post_date}</span>
                             </td>
                             <td>
-                                <span class="board_table_detail_viewCount">${POST_LIST[i].post_views}</span>
+                                <span class="board_table_detail_viewCount">${POST_LIST[idx].post_views}</span>
                             </td>
                             <td>
-                                <span class="board_table_detail_buff">${POST_LIST[i].post_buff}</span>
+                                <span class="board_table_detail_buff">${POST_LIST[idx].post_buff}</span>
                             </td>
                         </tr>`
+    }
+    for(let i=0; i<POST_LIST.length; i++){ // pagination 버튼 게시글 25개마다 한개씩 추가
+        if((i != 0) && (i % 25 == 0)){
+            pagination_page ++;
+            btn_pagination_page_box.innerHTML += `<button class="btn_pagination btn_pagination_page">${pagination_page}</button>`
+        }
+    }
+
+let btn_pagination_page = document.getElementsByClassName('btn_pagination_page');
+    for(let i=0; i<btn_pagination_page.length; i++){
+        btn_pagination_page[i].addEventListener('click', function(){
+            location.href = `https://clread1.github.io/프로젝트_1/html/main_page.html?admin=1&page=${this.innerText}`
+        })
     }
