@@ -23,14 +23,10 @@
     line-height: 32px;
     color: #222;
 }
-.write_article_select{
-    height: 32px;
-    line-height: 17px;
-    align-items: center;
-    padding: 7px 10px 6px;
-    border: 1px solid #ebebeb;
-    box-sizing: border-box;
-    color: #b9b9b9;
+.write_article_select_box{
+    width: 200px;
+    position: relative;
+    user-select:none
 }
 .write_article_select::after{
     content: "";
@@ -43,6 +39,73 @@
     height: 11px;
     margin-left: 10px;
 }
+.write_article_select{
+    display: flex;
+    justify-content: space-between;
+    height: 32px;
+    line-height: 17px;
+    align-items: center;
+    padding: 7px 10px 6px;
+    border: 1px solid #ebebeb;
+    box-sizing: border-box;
+    color: #b9b9b9;
+}
+.write_article_select_list{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding-left: 14px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border: 1px solid #ededed;
+    border-radius: 12px;
+    background-color: white;
+    box-sizing: border-box;
+}
+.tab_list_title{
+    display: block;
+    padding: 8px 30px 8px 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    letter-spacing: -.3px;
+    line-height: 18px;
+}
+.tab_list_title:nth-of-type(n+2){
+    margin-top: 12px;
+    border-top: 1px solid #ededed;
+}
+.tab_list_option{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: -2px;
+    padding: 6px 15px 6px 0;
+    font-size: 15px;
+    line-height: 17px;
+    font-weight: 500;
+    box-sizing: border-box;
+
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #000;
+    background-color: white;
+}
+.tab_list_option::before{
+    content: "";
+    background-image: url(https://ssl.pstatic.net/static/nng/resource/p/static/media/sp_mw5.41aa320d.png);
+    background-size: 638px 617px;
+    background-repeat: no-repeat;
+    background-position: -574px -482px;
+    width: 9px;
+    height: 9px;
+    margin-right: 3px;
+    z-index: 10;
+}
 .write_article_content{
     margin: 29px 30px 17px;
 }
@@ -51,6 +114,9 @@
     font-size: 19px;
     box-sizing: border-box;
     border: none;
+}
+.write_content_title::placeholder{
+    color: inherit;
 }
 .toolbar_box{
     height: 105px;
@@ -88,6 +154,9 @@
     outline: none;
     resize: none;
     font-size: 18px;
+}
+.write_article_detail::placeholder{
+    color: inherit;
 }
 .write_article_tag_box{
     border: 1px solid #ededed;

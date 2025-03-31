@@ -39,3 +39,9 @@ input{
 .clearFix{
     clear: both;
 }
+.display_none{
+    display: none;
+}
+.c_black{
+    color: black;
+}
